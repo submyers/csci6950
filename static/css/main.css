@@ -1,0 +1,29 @@
+#headImage {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+#headImageContainter {
+    width: 100%;
+    height: auto;
+    top: 10px;
+    z-index: -1;
+}
+
+#userInfo {
+    position: relative; 
+    width: 100%; 
+    text-align: right;
+    padding: 5px 3px 3px 5px;
+    transform: translateY(250%);
+}
+
+#headerName {
+    transform: translateY(50%);
+}
+
+#copyright {
+    text-align: center;
+    font-size: smaller;
+}
