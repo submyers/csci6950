@@ -22,24 +22,27 @@
     });
   </script>
 
+  {% block head_expansion %}
+  {% endblock %}
+
 </head>
 <body>
   <div class="header gradient">
     <div class="container">
       <div class="row">
-	<div class="col-md-2">
-	  <div id="headImageContainter">
-	    <img id="headImage" alt="Quinn Research Lab" src="{% static 'imgs/quinnResearchGroup.png' %}" />
-	  </div>
-	</div>
-	<div class="col-md-4">
-	  <h1 id="headerName">Cilia Website</h1>
-	</div>
-	<div class="col-md">
-	  <div id="userInfo">
-	    Welcome [username] -- <a href="#" onclick="return false">Logout</a>
-	  </div>	  
-	</div>
+        <div class="col-md-2">
+          <div id="headImageContainter">
+            <img id="headImage" alt="Quinn Research Lab" src="{% static 'imgs/quinnResearchGroup.png' %}" />
+          </div>
+        </div>
+        <div class="col-md-8">
+          <h1 id="headerName">CSCI 6950 - Fall, 2020</h1>
+        </div>
+        <!-- <div class="col-md">
+          <div id="userInfo">
+            Welcome [username] -- <a href="#" onclick="return false">Logout</a>
+          </div>	  
+        </div> -->
       </div>
     </div>
   </div>
@@ -54,19 +57,20 @@
 	<li class="nav-item active">
           <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
 	</li>
-	<li class="nav-item">
-          <a class="nav-link" href="/deep_learning/">Deep Learning</a>
-	</li>
 	<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+            Deep Learning
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="/deep_learning/">Home</a>
+            <a class="dropdown-item" href="/deep_learning/ch9">Ch 9</a>
+            <!-- <a class="dropdown-item" href="#">Another action</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Something else here</a> -->
           </div>
+	</li>
+	<!-- <li class="nav-item">
+          <a class="nav-link" href="/deep_learning/">Deep Learning</a>
 	</li>
 	<li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -76,7 +80,7 @@
 	<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
-    </div>
+    </div> -->
   </nav>
   <br><br>
   <div class="container">
