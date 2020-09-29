@@ -25,7 +25,7 @@ SECRET_KEY = '9+=9u4)gcsjs4t#5(v1p!3jt(+^nle8uzmm)lf13!dfvbogaa&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost','tealc.cs.uga.edu']
 
 
 # Application definition
